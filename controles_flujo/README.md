@@ -4,6 +4,17 @@ existen maneras de romper el flujo normal de las progrmas creando `difrucaciones
 ## decisiones 
 ### la sentecia if 
 le sentencia de decicion de python es `if` .En sun escritura debemos añadsir una **exprecion de compracion** terminando con `:` al final de la linea 
+`else - elif`
+almacenar el if en una variable 
+```python
+edad:int=int("escribe tun edad: ")
+respuesta:str= "eres mayor"if edad>=18 else "eres menor"
+if edad >=18
+ print("eres mayor")
+ else:
+    print("eres menor de edad")
+
+```
 > ejemplo:
 
 ```python
@@ -12,9 +23,13 @@ if True:
 ```
 ## ciclos 
 son los controles de flujo que rerpiten codigo si en sintaxis es la siguiente 
+### FOR
  >para FOR
  ```python
  #este codigo impreme los numeros 
  #de 1 al 10
- 
+ for n in range(1,11)
+        print(n)
  ```
+ 
+ ### white
