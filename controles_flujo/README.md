@@ -33,3 +33,8 @@ son los controles de flujo que rerpiten codigo si en sintaxis es la siguiente
  ```
  
  ### white
+ range consume menos pero ejhecuta rapido 
+
+ print consume menos y ejecuta rapido en textos medianos 
+ 
+enumerate consume mas cuando es texto corto y en texto largos consume nemos y ejecuta rapido 
