@@ -86,9 +86,28 @@
 #oooo
 #uuuuu
 
-vocales = ['a', 'e', 'i', 'o','u']
-for i in range(len(vocales)):
-   liena = vocales[i] * (i+1)
-   print(liena)
+# vocales = ['a', 'e', 'i', 'o','u']
+# for i in range(len(vocales)):
+#    liena = vocales[i] * (i+1)
+#    print(liena)
 
+# # crear un programa que me muestre la tabla de mulñtiplicacion de 1 hasta 5
+# # Iterar sobre los números del 1 al 5
+# for i in range(1, 6):
+#     print(f"Tabla de multiplicar del {i}:")
+#     # Iterar sobre los números del 1 al 10 para mostrar la tabla de multiplicación
+#     for j in range(1, 13):
+#         resultado = i * j
+#         print(f"{i} x {j} = {resultado}")
+#     print()  # Salto de línea entre las tablas de multiplicación    
+
+
+#crear un progrma que pida un numero y que nuestre la tabla de multiplicar de ese numero 
+numero = int(input("Ingresa un número para ver su tabla de multiplicar: "))
+
+print(f"Tabla de multiplicar del {numero}:")
+# Iterar sobre los números del 1 al 10 para mostrar la tabla de multiplicación del número ingresado
+for i in range(1, 13):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")    
         

@@ -1,4 +1,4 @@
-# controles de fujo 
+# ♠controles de fujo 
 todos los programas trabajan a trevez de instrucciones ordenadas.
 existen maneras de romper el flujo normal de las progrmas creando `difrucaciones` creando `repeticion` de instrucciones.
 ## decisiones 
@@ -33,6 +33,16 @@ son los controles de flujo que rerpiten codigo si en sintaxis es la siguiente
  ```
  
  ### white
+ es un mecanisno que usa `python` para repetir instrucciones, la semantica de esta sentencia en : `mientras se cumpla la condicion has algo` 
+ ```python
+ while true:
+    print("hola")
+#bucle infinito
+ ```
+ 
+ 
+ 
+ 
  range consume menos pero ejhecuta rapido 
 
  print consume menos y ejecuta rapido en textos medianos 
