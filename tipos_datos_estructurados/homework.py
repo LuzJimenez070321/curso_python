@@ -34,3 +34,11 @@ print(lista_nombres)
 # lista_nombres=["edith","ruth","luz"]
 # indice=lista_nombres.index("ruth")
 # print(lista_nombres[indice])
+
+
+## 2. crear una lista de con 4 disccionarios donde tendran los datos de sus mascotas (nombre,edad,sexo,raza)
+
+# tareas
+# mostrar la lista con los 4 diccionarios 
+# editar el tercer regritro y cambiarle la edad sin modificar la lista original
+# mostrar la lista original y luego la lista del tercer registro modificado
