@@ -6,4 +6,3 @@ El ususario tiene un gras el cual administra de manera manual,el usuario nesecit
 >el usuario podrar por el alquiler de la reserva realizada.
 >el usuario podra verificar su alquiler el cual le mostrara los detalles como fecha,hora y costo del alquiler que realizo.
 
-#
