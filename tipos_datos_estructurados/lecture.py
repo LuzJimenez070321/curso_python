@@ -29,25 +29,25 @@
 
 
 # crear una lista de numeros enteros del siguiente texto 
-# texto="1,4,8,9,6"
-# nueva_lista=[]
-# for n in texto.split(","):
-#     nueva_lista.append(int(n))
-# print(nueva_lista)    
+texto="1,4,8,9,6"
+nueva_lista=[]
+for n in texto.split(","):
+     nueva_lista.append(int(n))
+print(nueva_lista)    
 # # aplicando la tecnica vlc valor bucle y condidcion 
 
 # texto="1,4,8,9,6"
 # nueva_lista=[int(n) for n in texto.split(",") if n%2==0]
 # print(nueva_lista)
 
-# diccionarios por comprension
-lista_amigos=["abel","anthony","edith","ruth"]
-diccionario={}
-for _,v in enumerate(lista_amigos):
-    diccionario[v]=len(v)
-print(diccionario)    
+# # diccionarios por comprension
+# lista_amigos=["abel","anthony","edith","ruth"]
+# diccionario={}
+# for _,v in enumerate(lista_amigos):
+#     diccionario[v]=len(v)
+# print(diccionario)    
 
-# aplicando el vlc
-lista_amigos=["abel","anthony","edith","ruth"]
-diccionario={amigo:len(amigos)for amigo in lista_amigos}
-print(diccionario)
+# # aplicando el vlc
+# lista_amigos=["abel","anthony","edith","ruth"]
+# diccionario={amigo:len(amigos)for amigo in lista_amigos}
+# print(diccionario)

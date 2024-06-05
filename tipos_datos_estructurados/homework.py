@@ -57,53 +57,65 @@
 # programacion 
 
 # Base de datos de vehículos
-vehiculos = [
-    {"modelo": "Honda", "marca": "CBR500R", "año": 2021, "estado": "Disponible", "precio_alquiler": 50},
-    {"modelo": "Yamaha", "marca": "YZF-R3", "año": 2020, "estado": "Alquilado", "precio_alquiler": 40},
-    {"modelo": "Suzuki", "marca": "GSX250R", "año": 2019, "estado": "Disponible", "precio_alquiler": 45}
-]
+# vehiculos = [
+#     {"modelo": "Honda", "marca": "CBR500R", "año": 2021, "estado": "Disponible", "precio_alquiler": 50},
+#     {"modelo": "Yamaha", "marca": "YZF-R3", "año": 2020, "estado": "Alquilado", "precio_alquiler": 40},
+#     {"modelo": "Suzuki", "marca": "GSX250R", "año": 2019, "estado": "Disponible", "precio_alquiler": 45}
+# ]
 
-# Función para ver la lista de vehículos
-def ver_lista_vehiculos():
-    print("Lista de Vehículos:")
-    for idx, vehiculo in enumerate(vehiculos):
-        print(f"ID: {idx}, Modelo: {vehiculo['marca']} {vehiculo['modelo']}, Estado: {vehiculo['estado']}, Precio de alquiler: ${vehiculo['precio_alquiler']} por día")
-    print("\n")
+# # Función para ver la lista de vehículos
+# def ver_lista_vehiculos():
+#     print("Lista de Vehículos:")
+#     for idx, vehiculo in enumerate(vehiculos):
+#         print(f"ID: {idx}, Modelo: {vehiculo['marca']} {vehiculo['modelo']}, Estado: {vehiculo['estado']}, Precio de alquiler: ${vehiculo['precio_alquiler']} por día")
+#     print("\n")
 
-# Función para agregar un nuevo vehículo
-def agregar_vehiculo():
-    modelo = input("Ingrese el modelo del vehículo: ")
-    marca = input("Ingrese la marca del vehículo: ")
-    año = input("Ingrese el año del vehículo: ")
-    estado = input("Ingrese el estado del vehículo (Disponible/Alquilado): ")
-    precio_alquiler = input("Ingrese el precio de alquiler por día del vehículo: ")
+# # Función para agregar un nuevo vehículo
+# def agregar_vehiculo():
+#     modelo = input("Ingrese el modelo del vehículo: ")
+#     marca = input("Ingrese la marca del vehículo: ")
+#     año = input("Ingrese el año del vehículo: ")
+#     estado = input("Ingrese el estado del vehículo (Disponible/Alquilado): ")
+#     precio_alquiler = input("Ingrese el precio de alquiler por día del vehículo: ")
 
-    vehiculo_nuevo = {"modelo": modelo, "marca": marca, "año": año, "estado": estado, "precio_alquiler": precio_alquiler}
-    vehiculos.append(vehiculo_nuevo)
-    print("Nuevo vehículo agregado correctamente.\n")
+#     vehiculo_nuevo = {"modelo": modelo, "marca": marca, "año": año, "estado": estado, "precio_alquiler": precio_alquiler}
+#     vehiculos.append(vehiculo_nuevo)
+#     print("Nuevo vehículo agregado correctamente.\n")
 
-# Función para actualizar la lista de vehículos
-def actualizar_lista():
-    ver_lista_vehiculos()
-    indice = int(input("Ingrese el ID del vehículo que desea actualizar: "))
-    if indice >= 0 and indice < len(vehiculos):
-        vehiculo = vehiculos[indice]
-        nuevo_estado = input("Ingrese el nuevo estado del vehículo (Disponible/Alquilado): ")
-        vehiculo['estado'] = nuevo_estado
-        print("Estado del vehículo actualizado correctamente.\n")
-    else:
-        print("ID de vehículo no válido.\n")
+# # Función para actualizar la lista de vehículos
+# def actualizar_lista():
+#     ver_lista_vehiculos()
+#     indice = int(input("Ingrese el ID del vehículo que desea actualizar: "))
+#     if indice >= 0 and indice < len(vehiculos):
+#         vehiculo = vehiculos[indice]
+#         nuevo_estado = input("Ingrese el nuevo estado del vehículo (Disponible/Alquilado): ")
+#         vehiculo['estado'] = nuevo_estado
+#         print("Estado del vehículo actualizado correctamente.\n")
+#     else:
+#         print("ID de vehículo no válido.\n")
 
-# Ejecutar las funciones
-ver_lista_vehiculos()
-agregar_vehiculo()
-ver_lista_vehiculos()
-actualizar_lista()
-ver_lista_vehiculos() 
-
-
+# # Ejecutar las funciones
+# ver_lista_vehiculos()
+# agregar_vehiculo()
+# ver_lista_vehiculos()
+# actualizar_lista()
+# ver_lista_vehiculos() 
 
 
+#crear una lista de los primeros 20 numeros primos  haciendo uso de comprension
 
+ #Función para verificar si un número es primo
+def es_primo(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
+# Crear una lista de números primos del 2 al 100 utilizando comprensión de listas
+numeros_primos = [num for num in range(2, 101) if es_primo(num)]
+
+# Imprimir la lista de números primos
+print(numeros_primos)
 

@@ -120,3 +120,20 @@ alumnos[0]["edad"]=30
 alumnos[0]={"nombre":"mafer","edad":20}
 print(alumnos)
 ```
+
+
+### 8. Listas y diccionarios por comprension 
+es una tecnica pythonica que nos permite crear lista y diccionarios en una sola linea combinando bucles y decisiones 
+>[!NOOTE]
+>**VLC** value loop condicion - valor bucle condicion
+
+```python
+# lista por comprension
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if n%2==0]
+print(nueva_lista)
+# para diccionarios por comprension 
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo:len(amigos)for amigo in lista_amigos}
+print(diccionario)
+```
