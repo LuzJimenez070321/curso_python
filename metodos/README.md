@@ -19,4 +19,23 @@ len (["h","o","l","a"])
 # 4
 
 ## Duplas
+```python
+# Definir dos listas con elementos
+nombres = ["Ana", "Juan", "María"]
+edades = [25, 30, 28]
+
+# Utilizar la función zip para emparejar los elementos en duplas
+duplas = zip(nombres, edades)
+
+# Mostrar las duplas resultantes
+for dupla in duplas:
+    print(dupla)
+```
 ## Diccionarios
+```python
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario) 
+```

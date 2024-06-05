@@ -28,41 +28,26 @@
 # 
 
 
+# crear una lista de numeros enteros del siguiente texto 
+# texto="1,4,8,9,6"
+# nueva_lista=[]
+# for n in texto.split(","):
+#     nueva_lista.append(int(n))
+# print(nueva_lista)    
+# # aplicando la tecnica vlc valor bucle y condidcion 
 
+# texto="1,4,8,9,6"
+# nueva_lista=[int(n) for n in texto.split(",") if n%2==0]
+# print(nueva_lista)
 
+# diccionarios por comprension
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)    
 
-
-
-
-
-
-
-
-
-# Crear diccionarios para almacenar la información de los estudiantes, aulas y observaciones
-estudiantes = {
-    "Carlos": {"nota": 85, "asistencia": 0, "observacion": None},
-    "Luisa": {"nota": 90, "asistencia": 0, "observacion": None}
-}
-
-aulas = {
-    "Aula 1": ["Carlos"],
-    "Aula 2": ["Luisa"]
-}
-
-# Función para que el alumno realice una observación
-def realizar_observacion(estudiante, observacion):
-    estudiante["observacion"] = observacion
-
-# Simular que el secretario académico asigna aulas
-aulas["Aula 1"].append("Luisa")
-
-# Simular que un alumno realiza una observación
-realizar_observacion(estudiantes["Carlos"], "Necesito aclaración sobre mi nota")
-
-# Mostrar la información de los estudiantes y aulas
-for aula, lista_estudiantes in aulas.items():
-    print(f"{aula}: {', '.join(lista_estudiantes)}")
-
-for nombre, info in estudiantes.items():
-    print(f"Estudiante: {nombre}, Nota: {info['nota']}, Asistencia: {info['asistencia']} %, Observación: {info['observacion']}")
+# aplicando el vlc
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo:len(amigos)for amigo in lista_amigos}
+print(diccionario)
