@@ -43,16 +43,28 @@ else:
 # minimo_numero = encontrar_minimo(numeros)
 # print("El número más pequeño de la lista es:", minimo_numero)
 
-# Crear una funcion que reciba como parametro de la edad de una persona mi funcion debera retornar un diccionario con los datos, luego mostrar por terminal el valor de retorno de mi funcion
-def crear_diccionario_persona(nombre, edad):
-    persona = {
-        "nombre": nombre,
-        "edad": edad
-    }
-    return persona
+# # Crear una funcion que reciba como parametro de la edad de una persona mi funcion debera retornar un diccionario con los datos, luego mostrar por terminal el valor de retorno de mi funcion
+# def crear_diccionario_persona(nombre, edad):
+#     persona = {
+#         "nombre": nombre,
+#         "edad": edad
+#     }
+#     return persona
 
-# Ejemplo de uso de la función
-nombre = "Juan"
-edad = 30
-datos_persona = crear_diccionario_persona(nombre, edad)
-print("Diccionario de datos de la persona:", datos_persona)
+# # Ejemplo de uso de la función
+# nombre = "Juan"
+# edad = 30
+# datos_persona = crear_diccionario_persona(nombre, edad)
+# print("Diccionario de datos de la persona:", datos_persona)
+
+# def suma(*args):
+#     nueva_lista=
+#     args[0]=10
+#     print(args)
+# suma(4,7,8,5,4)    
+
+# empaquetado y desempequetado de argumentos nominales 
+def alumnos(**kwargs):
+    kwargs["nombre"]="abel"
+    print(kwargs)
+alumnos(nombre="miguel",apellido="largo",edad=30)

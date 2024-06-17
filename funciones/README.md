@@ -278,3 +278,11 @@ Cuando hablamos de funciones internas nos referimos a las funciones basicas que 
 >`type()`-> Funcion nos devuelve el tipo de objeto
 
 >`zip()`-> Funcion nos permite crear objetos de tipo clave-valor, en base a los tuples informados.
+
+
+## Tipos de Funciones
+### Funciones Anominas (Funciones lambda)
+### Funciones Closure
+### Funciones Callback
+
+### Programacion Funcional 
