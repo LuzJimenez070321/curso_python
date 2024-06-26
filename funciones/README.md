@@ -284,11 +284,20 @@ Cuando hablamos de funciones internas nos referimos a las funciones basicas que 
 ### Funciones Anominas (Funciones lambda)
 una funcion que no tiene nombre 
 `lambda`:"hola"
+```python
+lambda:"hola"
+# normal
+def saludo()
+    return "hola"
+```
 ### Funciones Closure
 una funcion que  dentro tiene otra funcion 
+python tiene un recolector de basura 
 `def saludo (nombre)`
 print (f"bienbenido{nombre"})
 ### Funciones Callback
 funciones que reciben por parametro otra funcion 
 `int(input("ingrese un numeros"))`
 ### Programacion Funcional 
+
+#### Averiguar sobre map (), filter(), reduce()

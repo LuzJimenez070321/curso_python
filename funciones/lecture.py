@@ -1,12 +1,12 @@
 # return devuelve los valores que podre hacer uso
 # crear una funcion que retorne el numero 10, y muestre por terminal si es par 
 # siempre que el valor que retorne mi funcion se utiliza en mas sentencias un operadores hacer return
-def diez():
-    return 10
-if diez()%2==0:
-    print("es par")
-else:
-    print("es impar") 
+# def diez():
+#     return 10
+# if diez()%2==0:
+#     print("es par")
+# else:
+#     print("es impar") 
 
 # print solo muestra por terminal
 
@@ -64,7 +64,100 @@ else:
 # suma(4,7,8,5,4)    
 
 # empaquetado y desempequetado de argumentos nominales 
-def alumnos(**kwargs):
-    kwargs["nombre"]="abel"
-    print(kwargs)
-alumnos(nombre="miguel",apellido="largo",edad=30)
+# def alumnos(**kwargs):
+#     kwargs["nombre"]="abel"
+#     print(kwargs)
+# alumnos(nombre="miguel",apellido="largo",edad=30)
+
+# # Ejemplos de lambda
+# saludo=lambda n, a:f"hola, {n} , {a}"
+# print(saludo("ruth","castillo"))
+
+# # crear un programa que amonimo que reciba como parametro una lista de 5 numeros y retorne dos lista una con los numeros y otra con numeros impares 
+# lista_numeros=[1,2,3,4,5,6,7,8,9,10]
+# pares=lambda l:[n for n in lista if n%2==0]
+# impares=lambda l:n [n for n in lista if n%2¡=0]
+# print(pares(lista_numeros))
+# print(impares(lista_numeros))
+
+# list(filter())
+
+# # map 
+# lista=[4,7,8,5,2]
+# nueva_lista=list(map(lambda x:x+1,lista)) # por defecto retorna una nueva lista
+# print(nueva_lista)
+
+# tengo una lista de alumnos que todos ellos aprobaron y pasan al tercer semestre 
+# en mi lista estan todos con el segundo semestre por lo que tenemos que crear una solucion que cambie el campo de semetre de 2 a 3
+# lista_alumnos=[
+#     {
+#         "nombre":"abel",
+#         "edad":36,
+#         "semestre":2
+#     },{
+#         "nombre":"anthony",
+#         "edad":40,
+#         "semestre":2
+#     },{
+#         "nombre":"edith",
+#         "edad":50,
+#         "semestre":2
+#     }
+# ]
+# def objeto(e):
+#     if "semestre" in e:
+#         e["semestre"]=e["semestre"]+1
+#     return[
+#         e
+#     ]    
+# nueva_lista=list(map(objeto,lista_alumnos))
+# print(nueva_lista)
+
+
+# lista_alumnos=[
+#    {
+#          "nombre":"abel",
+#          "edad":36,
+#          "semestre":2
+#      },{
+#          "nombre":"anthony",
+#          "edad":40,
+#          "semestre":2
+#      },{
+#          "nombre":"edith",
+#          "edad":50,
+#          "semestre":2
+#      }
+#  ]
+# def objeto(e):
+#     e["programa_estudio"]="ASPTI"
+#     return[
+#         e
+#     ]
+# nueva_lista=list(map(objeto,lista_alumnos))
+# print(nueva_lista)
+
+# # filter
+# devolver los numeros pares de una lista
+# lista=[4,8,2,5,7,10,6,5,3,20]
+# nueva_lista=list(filter(lambda x:x%2==0,lista))
+# print(nueva_lista)
+
+lista_alumnos=[
+    {
+          "nombre":"abel",
+          "edad":36,
+          "semestre":2
+      },{
+          "nombre":"anthony",
+          "edad":40,
+          "semestre":2
+      },{
+          "nombre":"edith",
+          "edad":50,
+          "semestre":2
+      }
+]
+  
+nueva_lista=list(filter(lambda x:x["edad"]<50,lista_alumnos))
+print(nueva_lista)
