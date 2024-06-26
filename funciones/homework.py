@@ -23,3 +23,8 @@ numeros = [10, 5, 7, 3, 8, 12]
 print("Número menor:", numero_menor(*numeros))
 print("Número mayor:", numero_mayor(*numeros))
 print("Suma de todos los números:", suma_numeros(*numeros))
+
+# crear una lista de alumnos con los siguientes datos 
+# nombre , apellido , edad , celular, email
+# 1. actualizar los registros con un campo mas todos tendran el campo de programa de estudios de enfermeria 
+# 2. buscar el segundo registro y actualizar su edad a 50 años 
