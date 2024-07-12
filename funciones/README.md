@@ -298,6 +298,101 @@ print (f"bienbenido{nombre"})
 ### Funciones Callback
 funciones que reciben por parametro otra funcion 
 `int(input("ingrese un numeros"))`
-### Programacion Funcional 
 
+### Programacion Funcional 
+la programación funcional es un paradigma de programación declarativa basado en el uso de verdaderas funciones matemáticas. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior.
+
+## CARACTERISTICAS
+Existen dos grandes categorías de lenguajes funcionales: los funcionales puros y los híbridos. La diferencia entre ambos estriba en que los lenguajes funcionales híbridos son menos dogmáticos que los puros, al admitir conceptos tomados de los lenguajes imperativos, como las secuencias de instrucciones o la asignación de variables. En contraste, los lenguajes funcionales puros tienen una mayor potencia expresiva, conservando a la vez su transparencia referencial, algo que no se cumple siempre con un lenguaje funcional híbrido
+# EJEMPLO
+Dada una lista de personas almacenadas en diccionarios:
+
+Filtrar de acuerdo al sexo
+Y calcular la media
+```python
+from functools import reduce
+personas = [
+    {'Nombre': 'Alicia', 'Edad': 22, 'Sexo': 'F'},
+    {'Nombre': 'Bob', 'Edad': 25, 'Sexo': 'M'},
+    {'Nombre': 'Charlie', 'Edad': 33, 'Sexo': 'M'},
+    {'Nombre': 'Diana', 'Edad': 15, 'Sexo': 'F'},
+    {'Nombre': 'Esteban', 'Edad': 30, 'Sexo': 'M'},
+    {'Nombre': 'Federico', 'Edad': 44, 'Sexo': 'M'},
+]
+
+hombres = list(filter(lambda x: x['Sexo'] == 'M', personas))
+suma_edades = reduce(lambda suma, p: suma + p['Edad'], hombres, 0)
+media_edad = suma_edades/(len(hombres))
+print(media_edad) # 33.0
+```
 #### Averiguar sobre map (), filter(), reduce()
+## Map
+El método map() se utiliza para crear un nuevo arreglo a partir de una existente, aplicando una función a cada uno de los elementos de la primera arreglo.
+
+# Ejemplo
+En el siguiente ejemplo, cada número de un arreglo se duplica.
+```python
+const numeros = [1, 2, 3, 4];
+const duplicar = numeros.map(elemento => elemento * 2);
+console.log(duplicar); // [2, 4, 6, 8]
+```
+
+## Filter
+El método filter() toma cada elemento de un arreglo y aplica una instrucción condicional contra él. Si este condicional devuelve true, el elemento se envía al arreglo de salida. Si la condición devuelve false, el elemento no se envía al arreglo de salida.
+
+# Ejemplos
+En el siguiente ejemplo, los números impares se" filtran", dejando solo números pares.
+```python
+const numeros = [1, 2, 3, 4];
+const pares = numeros.filter(item => item % 2 === 0);
+console.log(pares); // [2, 4]
+En el siguiente ejemplo, filter() se usa para obtener todos los estudiantes cuyas calificaciones son mayores o iguales a 90.
+
+const estudiantes = [
+  { nombre: 'Quincy', grado: 96 },
+  { nombre: 'Jason', grado: 84 },
+  { nombre: 'Alexis', grado: 100 },
+  { nombre: 'Sam', grado: 65 },
+  { nombre: 'Katie', grado: 90 }
+];
+
+const gradosDeEstudiante = estudiantes.filter(estudiante => estudiante.grado >= 90);
+return gradosDeEstudiante; // [ { nombre: 'Quincy', grado: 96 }, { nombre: 'Alexis', grado: 
+```
+## Reduce
+El método reduce() reduce un arreglo de valores a un solo valor. Para obtener el valor de salida, ejecuta una función reductora en cada elemento del arreglo.
+
+# Ejemplos
+El siguiente ejemplo suma todos los números juntos en un arreglo de números.
+```python
+const numeros = [1, 2, 3, 4];
+const suma = numeros.reduce(function (resultado, elemento) {
+  return resultado + elemento;
+}, 0);
+console.log(suma); // 10
+```
+En el siguiente ejemplo, reduce() se usa para transformar un arreglo de cadenas en un único objeto que muestra cuántas veces aparece cada cadena en el arreglo. Observa que esta llamada para reducir pasa un objeto vacío {} como parámetro de valorInicial. Esto se usará como el valor inicial del acumulador (el primer argumento) pasado a la función callback.
+```python
+var mascotas = ['perro', 'pollo', 'gato', 'perro', 'pollo', 'pollo', 'conejo'];
+
+var recuentosDeMascota = mascotas.reduce(function(obj, mascota){
+    if (!obj[mascota]) {
+        obj[mascota] = 1;
+    } else {
+        obj[mascota]++;
+    }
+    return obj;
+}, {});
+
+console.log(recuentosDeMascota); 
+
+/*
+Salida:
+ { 
+    perro: 2, 
+    pollo: 3, 
+    gato: 1, 
+    conejo: 1 
+ }
+ */
+ ```
